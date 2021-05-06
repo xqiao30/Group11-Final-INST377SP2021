@@ -22,10 +22,10 @@ axios.get(`/movie`).then((res) => {
 submitBtn.addEventListener('click', () => {
   const selectSelEle = selectEle.getElementsByTagName('select')[0]
   const index = selectSelEle.selectedIndex; // selectedIndex代表的是你所选中项的index
-  // console.log('我输入了', changeText.value);
-  console.log('我选中了', selectSelEle.options[index].value, selectSelEle.options[index].text);
+  // console.log('I type in', changeText.value);
+  console.log('I selected', selectSelEle.options[index].value, selectSelEle.options[index].text);
   if (!scoreText.value || !selectSelEle.options[index].value) {
-    alert('请检查输入信息')
+    alert('Please chaeck the input info')
     return;
   }
   axios({
@@ -38,9 +38,9 @@ submitBtn.addEventListener('click', () => {
   }).then(function (res) { //回调函数  接受服务器参数
     console.log(res);
     const data = res.data;
-    data && alert('更新成功')
+    data && alert('Successfully Updated')
   }).catch((error) => {
     console.log('error: ', error);
-    alert('更新失败')
+    alert('Update Failed')
   })
 })
