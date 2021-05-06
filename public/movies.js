@@ -4,7 +4,7 @@ const cardContainer = document.getElementsByClassName('movie-card')[0];
 
 searchBtn.addEventListener('click', () => {
   console.log('I search', movieIn.value);
-  axios.get(`/movie?movie_title=${movieIn.value}`).then((res) => {
+  axios.get(`/movie/${movieIn.value}`).then((res) => {
     const data = res.data;
     let html = ``
     data.map((ele) => {

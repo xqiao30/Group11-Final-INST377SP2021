@@ -28,6 +28,7 @@ updateBtn.addEventListener('click', () => {
   const changeType = selectTypeEle.options[typeIndex].value;
   const movieId = selectMovieSelEle.options[movieIndex].value;
   const movieTitle = selectMovieSelEle.options[movieIndex].text;
+  console.log(changeText);
   if (!movieTitle || !changeText.value || !movieId) {
     alert('请检查输入信息')
     return;
