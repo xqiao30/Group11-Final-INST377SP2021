@@ -270,6 +270,7 @@ router.delete('/movie/:movie_id', async (req, res) => {
 });
 
 router.put('/movie', async (req, res) => {
+  console.log('put req.body: ', req.body);
   try {
     await db.movie.update(
       {
@@ -288,7 +289,7 @@ router.put('/movie', async (req, res) => {
     res.send('Successfully Updated');
   } catch (err) {
     console.error(err);
-    res.error('Server error');
+    res.status(404).json({ message: 'error' });
   }
 });
 
