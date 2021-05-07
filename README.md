@@ -22,7 +22,7 @@ https://peaceful-bayou-21239.herokuapp.com/
 
 ## Target Browsers
 
-    Our target operating system is Windows/macOS/Linux. After testing, our website works on Chrome, version 90.0.4430.85, Safari, version 14.0.3, Firefox, version 87.0, and we believe it will work on most desktop browsers.
+Our target operating system is Windows/macOS/Linux. After testing, our website works on Chrome, version 90.0.4430.85, Safari, version 14.0.3, Firefox, version 87.0, and we believe it will work on most desktop browsers.
 
 # Developer Menual
 
